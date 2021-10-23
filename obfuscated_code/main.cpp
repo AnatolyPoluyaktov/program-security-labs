@@ -17,7 +17,6 @@ std::string offset(const std::string &s) {
     int num = 0;
     auto t1 = std::chrono::high_resolution_clock::now();
     for (auto i: s) {
-        //total += std::to_string(int(i << 4)) + " ";
         num = i << cifre(2,3);
         if (num == -5){
             char c;
@@ -26,13 +25,12 @@ std::string offset(const std::string &s) {
             std::cout << "Enter an alphabet: ";
             std::cin >> c;
 
-            // evaluates to 1 (true) if c is a lowercase vowel
+
             isLowercaseVowel = (c == 'a' || c == 'e' || c == 'i' || c == 'o' || c == 'u');
 
-            // evaluates to 1 (true) if c is an uppercase vowel
             isUppercaseVowel = (c == 'A' || c == 'E' || c == 'I' || c == 'O' || c == 'U');
 
-            // show error message if c is not an alphabet
+
             if (!isalpha(c))
                 printf("Error! Non-alphabetic character.");
             else if (isLowercaseVowel || isUppercaseVowel)
