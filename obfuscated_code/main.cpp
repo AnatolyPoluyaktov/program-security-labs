@@ -3,6 +3,7 @@
 #include <iostream>
 #include <chrono>
 #include <bitset>
+#include <algorithm>
 #define anime crypto
 #define wow std::string ans = to_string(to_bitset(str1) ^ to_bitset(str2));
 #define bugaga "01001010101010001101001000010100"
@@ -133,7 +134,6 @@ std::string invert_login(std::string admin) {
 
 int main() {
     auto t1 = std::chrono::high_resolution_clock::now();
-    std::cout << cifre(2,3);
     for (;;) {
         std::string login;
         std::cout << "Enter login: ";
