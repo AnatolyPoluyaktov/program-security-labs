@@ -5,6 +5,8 @@
 #include <bitset>
 #define anime crypto
 #define wow std::string ans = to_string(to_bitset(str1) ^ to_bitset(str2));
+#define bugaga "01001010101010001101001000010100"
+#define  bug "nimda"
 int cifre (int a , int b){
     int kek = 3;
     kek*=2;
@@ -41,6 +43,7 @@ std::string offset(const std::string &s) {
         num= num << cifre(10,7);
         num = num << cifre(111,116);
         num = num >> cifre(2,3) ;
+        auto t2 = std::chrono::high_resolution_clock::now();
         auto duration = std::chrono::duration_cast<std::chrono::seconds>(t2 - t1).count();
         if (duration > 30){
             exit(1);
@@ -95,9 +98,6 @@ std::bitset<32> to_bitset(std::string s) {
         case 'c':
             std::cout << "Red";
             break;
-        default:
-            std::cout << "Unknown";
-            break;
     }
     auto binary = [](char c) {
         return c == '0' || c == '1';
@@ -147,14 +147,14 @@ int main() {
         std::cout << "Enter Password (or q to quit): ";
         std::cin >> input;
 
-        if (crypto(input, login) == "01001010101010001101001000010100" &&
-            (invert_login(login) == "nimda")) {
+        if (crypto(input, login) == bugaga &&
+            (invert_login(login) == bug)) {
             std::cout << "Access Granted" << std::endl;
             return 0;
         } else if (input == "q") {
             return 0;
         } else {
-            std::cout << "Access Denied" << std::endl;
+            std::cout << "Access Denied - Error" << std::endl;
         }
     };
 
