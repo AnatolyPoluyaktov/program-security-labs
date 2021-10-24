@@ -39,19 +39,19 @@
 
 ##  Описания функций
 
-1. std::string offset(const std::string &s) - принимает строку сдвигает каждый двоичное представление побитово на 4 влево и возвращает новую строку.
+1. std::string offset(const std::string &s) - принимает строку и сдвигает каждый символ в  двоичном представлении побитово на 4 влево и возвращает новую строку.
 
-2. std::string string_to_hex(const std::string &input) - перевод строку символов в строку символов в строку из шестнадцатиричных кодов.
+2. std::string string_to_hex(const std::string &input) - перевод строку символов в строку из шестнадцатиричных кодов.
 
-3. std::bitset<32> to_bitset(std::string s) - переводит строку в объект из двоичных чисел
+3. std::bitset<32> to_bitset(std::string s) - переводит строку в объект из двоичных чисел.
 
-4. std::string to_string(std::bitset<32> bs) - переводит из типа bitset в строку 
+4. std::string to_string(std::bitset<32> bs) - переводит из типа bitset в строку. 
 
-5. std::string xoring(std::string str1, std::string str2) - прозводит операцию сложения по модулю 2
+5. std::string xoring(std::string str1, std::string str2) - прозводит операцию сложения по модулю 2.
 
-6. std::string crypto(std::string password, std::string login) - функций в которой последоветельно вызываются функции ofset, string_to_hex, xoring и возвращается результат в виде строки
+6. std::string crypto(std::string password, std::string login) - функций в которой последоветельно вызываются функции ofset, string_to_hex, xoring и возвращается результат в виде строки.
 
-7. std::string invert_login(std::string admin) - переворачивает строку
+7. std::string invert_login(std::string admin) - переворачивает строку.
 
 ##  Примеры работы программы
 
