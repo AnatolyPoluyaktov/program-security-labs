@@ -41,7 +41,7 @@
 
 1. std::string offset(const std::string &s) - принимает строку и сдвигает каждый символ в  двоичном представлении побитово на 4 влево и возвращает новую строку.
 
-2. std::string string_to_hex(const std::string &input) - перевод строку символов в строку из шестнадцатиричных кодов.
+2. std::string string_to_hex(const std::string &input) - переводит строку символов в строку из шестнадцатиричных кодов.
 
 3. std::bitset<32> to_bitset(std::string s) - переводит строку в объект из двоичных чисел.
 
